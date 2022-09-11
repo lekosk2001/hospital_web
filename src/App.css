@@ -1,0 +1,61 @@
+:root{
+    /* color */
+    --color_60per:hsl(0, 0%, 60%);
+    --color_80per:hsl(0, 0%, 80%);
+    --color_95per:hsl(0, 0%, 95%);
+
+    /* font size */
+    --font_mini_13px:13px;
+    --font_samll_16px:16px;
+    --font_regular_18px:18px;
+    --font_medium_20px:20px;
+    --font_large_24px:24px:;
+    --font_balck_36px:36px;
+    --font_max_48px:48px;
+}
+
+/* 리셋 */
+body{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+
+h3, h4, h5, h6{
+    font-weight: 400;
+}
+
+h1{
+    font-size: var(--font_balck_36px);
+}
+
+h3{
+    font-size: var(--font_regular_18px);
+}
+
+h6{
+    font-size: var(--font_mini_13px);
+}
+
+p{
+    font-size: var(--font_samll_16px);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+main{
+    display: flex;
+    height: 100rem;
+    flex-direction: column;
+    padding: 0px 80px;
+    margin-top: 160px;
+}
