@@ -1,25 +1,57 @@
 :root{
     /* color */
+    --color_40per:hsl(0, 0%, 40%);
     --color_60per:hsl(0, 0%, 60%);
     --color_80per:hsl(0, 0%, 80%);
+    --color_90per:hsl(0, 0%, 90%);
     --color_95per:hsl(0, 0%, 95%);
+    --color_blue:#009fe9;
+    --color_navy:#003e63;
 
     /* font size */
     --font_mini_13px:13px;
     --font_samll_16px:16px;
     --font_regular_18px:18px;
     --font_medium_20px:20px;
-    --font_large_24px:24px:;
+    --font_large_24px:24px;
     --font_balck_36px:36px;
     --font_max_48px:48px;
 }
+
+.color_blue{
+    color: var(--color_blue);
+}
+
+.color_40per{
+    color: var(--color_40per);
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.eng{
+    letter-spacing: 0.5px;
+}
+
+.font_mini{
+    font-size: var(--font_mini_13px);
+}
+
 
 /* 리셋 */
 body{
     margin: 0px;
     padding: 0px;
-    list-style: none;
     box-sizing: border-box;
+    letter-spacing: -0.75px;
+    word-break: keep-all;
+}
+
+ul, li{
+    list-style:none;
+    padding:0px;
+    margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -32,6 +64,12 @@ h3, h4, h5, h6{
 
 h1{
     font-size: var(--font_balck_36px);
+    letter-spacing: -3px;
+}
+
+h2{
+    font-size: var(--font_large_24px);
+    letter-spacing: -3px;
 }
 
 h3{
@@ -43,6 +81,7 @@ h6{
 }
 
 p{
+    margin: 0px;
     font-size: var(--font_samll_16px);
 }
 
@@ -52,10 +91,14 @@ a{
     
 }
 
+button{
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+}
+
 main{
     display: flex;
-    height: 100rem;
     flex-direction: column;
-    padding: 0px 80px;
     margin-top: 160px;
 }
