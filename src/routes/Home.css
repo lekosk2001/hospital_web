@@ -1,4 +1,4 @@
-section{
+main section{
     margin: 0px 80px;
 }
 
@@ -158,6 +158,8 @@ section{
 }
 
 .home_news ul{
+    max-width: 1420px;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -168,7 +170,7 @@ section{
 .home_news li{
     width: 460px;
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .news_thumnail{

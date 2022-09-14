@@ -30,8 +30,9 @@ nav a:last-child{
     border-right: 0px;
 }
 
-nav h6{
+nav a h6{
     color: var(--color_60per);
+    margin-bottom: 5px;
 }
 
 .logo a{
