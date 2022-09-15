@@ -9,7 +9,19 @@ header{
     position: fixed;
     top: 0px;
     z-index: 1;
+    transition: 0.1s ease;
 }
+
+.change_header{
+    height: 120px;
+}
+
+.change_header .logo div{
+    margin: 0px;
+    padding: 0px;
+    border: #fff;
+}
+
 
 nav{
     position:fixed;
@@ -18,7 +30,6 @@ nav{
 }
 
 nav a{
-    height: 40px;
     padding: 0px 20px;
     border-right: 1px solid var(--color_80per);
 }
@@ -46,6 +57,7 @@ nav a h6{
     padding-bottom: 5px;
     margin: 5px 0px;
     border-bottom: 1px solid var(--color_40per);
+    transition: 0.1s ease;
 }
 
 .logo a h1{
@@ -62,7 +74,8 @@ nav a h6{
     flex-wrap: nowrap;
     right: 80px;
     height: 40px;
-    gap: 5px;
+    gap: 10px;
+    align-items: center;
 }
 
 .sns a{
@@ -75,26 +88,30 @@ nav a h6{
     color:white;
     font-size: var(--font_samll_16px);
     padding: 0px 15px;
-    line-height: 40px;
-}
-
-.coop_link{
-    height: 100%;
+    line-height: 36px;
+    margin-right: 10px;
+    display: flex;
+    gap:10px;
+    align-items: center;
 }
 
 .sns_btn{
     display: flex;
     position: relative;
-    width: 40px;
+    width: 30px;
+    height: 30px;
     background-color: var(--color_95per);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
 }
 
-.sns_btn img{
-    width: 30px;
-    height: 30px;
-    border-radius: 4px;
-    background-color: var(--color_60per);
+.svg-inline--fa{
+height: 20px;
+color: var(--color_navy);
+}
+
+.icon_link{
+    height: 12px;
+    color: white;
 }

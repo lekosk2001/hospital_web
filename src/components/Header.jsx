@@ -1,10 +1,28 @@
+import React, {useState, useEffect} from 'react';
+
 import { Link } from 'react-router-dom';
-import React from 'react';
 import './Header.css';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(fab);
+
 export default function Header() {
+    
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const updateScroll = () => {
+        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    }
+    useEffect(()=>{
+        window.addEventListener('scroll', updateScroll);
+    });
+
     return (
-        <header>
+        <header className={scrollPosition < 100 ? null : "change_header"}>
             <nav>
                 <Link to="/">
                     <h6 className='eng'>ABOUT</h6>
@@ -41,12 +59,12 @@ export default function Header() {
             <div className='sns'>
                 <Link to="/">
                     <span className='coop_link'>재활협력병원 LGS재활병원
-                    <img src="" alt="" /></span>
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="icon_link"/></span>
                 </Link>
-                <Link to="/"><span className='sns_btn'><img src="" alt="" /></span></Link>
-                <Link to="/"><span className='sns_btn'><img src="" alt="" /></span></Link>
-                <Link to="/"><span className='sns_btn'><img src="" alt="" /></span></Link>
-                <Link to="/"><span className='sns_btn'><img src="" alt="" /></span></Link>
+                <Link to="/"><span className='sns_btn'><FontAwesomeIcon icon={["fab", "fa-square-facebook"]} /></span></Link>
+                <Link to="/"><span className='sns_btn'><FontAwesomeIcon icon={["fab", "fa-youtube"]} /></span></Link>
+                <Link to="/"><span className='sns_btn'><FontAwesomeIcon icon={["fab", "fa-square-instagram"]} /></span></Link>
+                <Link to="/"><span className='sns_btn'><FontAwesomeIcon icon={["fab", "fa-square-twitter"]} /></span></Link>
             </div>
         </header>
     )

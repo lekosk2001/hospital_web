@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import React from 'react'
 import './Home.css';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStethoscope,faHandHoldingMedical,faHandsHoldingChild,faHospitalUser} from '@fortawesome/free-solid-svg-icons'
+
 export default function Home() {
     return (
         <main>
@@ -14,32 +17,36 @@ export default function Home() {
                         <h2>소아재활치료센터</h2>
                         <p>체계적인 치료 시스템</p>
                     </span>
-                    <img src=''>
-                    </img>
+                    <span>
+                        <FontAwesomeIcon icon={faHandsHoldingChild} className="icon"/>
+                    </span>
                 </Link>
                 <Link to="/">
                     <span>
                         <h2>뇌졸중재활치료</h2>
                         <p>질환에 의한 후유증을 치료</p>
                     </span>
-                    <img src=''>
-                    </img>
+                    <span>
+                        <FontAwesomeIcon icon={faHandHoldingMedical} className="icon"/>
+                    </span>
                 </Link>
                 <Link to="/">
                     <span>
                         <h2>입퇴원 안내</h2>
                         <p>친절하고 간소한 절차</p>
                     </span>
-                    <img src=''>
-                    </img>
+                    <span>
+                        <FontAwesomeIcon icon={faHospitalUser} className="icon"/>
+                    </span>
                 </Link>
                 <Link to="/">
                     <span>
                         <h2>진료 예약</h2>
                         <p>충북 최초 재활병원</p>
                     </span>
-                    <img src=''>
-                    </img>
+                    <span>
+                        <FontAwesomeIcon icon={faStethoscope} className="icon"/>
+                    </span>
                 </Link>
             </section>
             <section className='home_intro'>

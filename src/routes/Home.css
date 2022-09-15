@@ -3,7 +3,7 @@ main section{
 }
 
 .visual{
-    height: 600px;
+    height: 800px;
     background-color: var(--color_80per);
     border-radius: 15px;
     margin-bottom: 40px;
@@ -38,13 +38,6 @@ main section{
     display: flex;
     flex-direction: column;
     color: white;
-}
-
-.home_menu img{
-    width: 80px;
-    border-radius: 40px;
-    background-color: #00588a;
-    height: 80px;
 }
 
 .home_intro{
@@ -185,4 +178,24 @@ main section{
     display: flex;
     text-align: left;
     margin-bottom: 10px;
+}
+
+
+.home_menu span:last-child{
+    display: flex;
+    width: 80px;
+    border-radius: 40px;
+    background-color: #00588a;
+    justify-content: center;
+    height: 80px;
+}
+
+.home_menu p{
+    opacity: 90%;
+}
+
+.icon{
+    height: 30px;
+    color: white;
+    opacity: 95%;
 }

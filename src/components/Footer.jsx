@@ -79,7 +79,7 @@ export default function Footer() {
                     사업자 등록번호 : 301-00-12345
                 </p>
                 <p>
-                    @ LGS Rehabilitation Hospital. All rights reserved.
+                    © LGS Rehabilitation Hospital. All rights reserved.
                 </p>
             </span>
             <span>
