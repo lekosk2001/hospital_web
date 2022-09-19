@@ -61,6 +61,11 @@ footer{
     border: 1px solid var(--color_blue);
     border-bottom: 0px;
     border-left: 0px;
+    transition: 0.2s ease;
+}
+
+.footer_btns button:hover .arrow{
+    margin-right: 5px;
 }
 
 .footer_btns button:last-child .arrow{
@@ -90,6 +95,14 @@ footer{
     color: var(--color_60per);
     font-size: var(--font_mini_13px);
     padding: 8px 0px;
+    transition: 0.1s ease;
+    margin-right: 10px;
+}
+
+.shortcut_box p:hover{
+    background-color: var(--color_95per);
+    padding-left: 10px;
+    color: var(--color_40per);
 }
 
 .footer_bottom{

@@ -3,7 +3,7 @@ main section{
 }
 
 .visual{
-    height: 800px;
+    height: 600px;
     background-color: var(--color_80per);
     border-radius: 15px;
     margin-bottom: 40px;
@@ -28,6 +28,7 @@ main section{
     padding: 0px 30px;
     align-items: center;
     justify-content: space-between;
+    transition: 0.2s ease;
 }
 
 .home_menu > a:last-child{
@@ -81,6 +82,7 @@ main section{
     align-items: center;
     padding: 0px 30px;
     border-radius: 8px;
+    transition: 0.2s ease;
 }
 
 .arrow{
@@ -95,6 +97,7 @@ main section{
 }
 
 .intro_slide_wrapper{
+    overflow: hidden;
     margin-left: 140px;
 }
 
@@ -198,4 +201,23 @@ main section{
     height: 30px;
     color: white;
     opacity: 95%;
+    transition: 0.2s ease;
+}
+/* 
+.home_menu a:hover h2, .home_menu a:hover p{
+    text-decoration: underline;
+    text-underline-position:under;
+} */
+
+.home_menu a:hover {
+    transform: translatey(-5px);
+}
+
+.home_menu a:hover .icon{
+    transform: rotatey(180deg);
+}
+
+.intro_btns button:hover{
+    border: 1px solid var(--color_95per);
+    background-color: var(--color_95per);
 }

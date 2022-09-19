@@ -41,9 +41,18 @@ nav a:last-child{
     border-right: 0px;
 }
 
+nav a{
+    transition: 0.1s ease;
+}
+
 nav a h6{
     color: var(--color_60per);
     margin-bottom: 5px;
+}
+
+nav a:hover{
+    color: var(--color_blue);
+    transform: translate(0,-5px);
 }
 
 .logo a{
@@ -84,7 +93,7 @@ nav a h6{
 
 .coop_link{
     border-radius: 8px;
-    background-color: var(--color_60per);
+    background-color: var(--color_80per);
     color:white;
     font-size: var(--font_samll_16px);
     padding: 0px 15px;
@@ -93,6 +102,11 @@ nav a h6{
     display: flex;
     gap:10px;
     align-items: center;
+    transition: 0.1s ease;
+}
+
+.coop_link:hover{
+    background-color: hsl(0, 0%, 70%);
 }
 
 .sns_btn{
@@ -100,18 +114,43 @@ nav a h6{
     position: relative;
     width: 30px;
     height: 30px;
-    background-color: var(--color_95per);
+    background-color: var(--color_90per);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
+    transition: 0.1s ease;
+}
+
+.sns_btn:hover{
+    background-color: var(--color_80per);
 }
 
 .svg-inline--fa{
 height: 20px;
-color: var(--color_navy);
+color: var(--color_60per);
+transition: 0.1s ease;
 }
+
+.sns_btn:hover .svg-inline--fa{
+    color: var(--color_navy);
+    }
 
 .icon_link{
     height: 12px;
     color: white;
+}
+
+@media screen and (max-width:800px) {
+    nav, .sns{
+        display: none;
+    }
+
+    header{
+        padding-left: 80px;
+        justify-content: start;
+    }
+
+    .logo a{
+        align-items:initial;
+    }
 }
