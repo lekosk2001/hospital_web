@@ -140,7 +140,7 @@ transition: 0.1s ease;
     color: white;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1300px) {
     nav, .sns{
         display: none;
     }
